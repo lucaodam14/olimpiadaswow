@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    background-color: #58FA58;
+}
+
+.imgouo {
+    width: 100%; /* Altera para 100% */
+    max-width: 420px; /* Limita a largura máxima */
+    height: auto;
+}
+
+.textopogger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Largura responsiva */
+    max-width: 550px; /* Limita a largura máxima */
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+nav.menu {
+    margin: 0;
+    width: 100vw;
+    background-color: white;
+}
+
+nav.menu ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+}
+
+nav.menu ul li {
+    display: inline-block;
+    min-width: 120px; /* Largura mínima para cada item */
+    padding: 10px;
+    border-radius: 15px;
+}
+
+nav.menu ul li a {
+    color: black;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu1:hover { background-color: #81F7F3; color: white; }
+.menu2:hover { background-color: #F3F781; color: white; }
+.menu3:hover { background-color: #424242; color: white; }
+.menu4:hover { background-color: #58FA58; color: white; }
+.menu5:hover { background-color: #FA5858; color: white; }
+.menu6:hover { background-color: silver; color: white; }
+
+@media (max-width: 768px) {
+    nav.menu ul {
+        flex-direction: column; /* Muda para coluna em telas menores */
+    }
+
+    nav.menu ul li {
+        width: 100%; /* Cada item ocupa toda a largura */
+    }
+
+    .textopogger {
+        width: 100%; /* Largura responsiva */
+    }
+}
